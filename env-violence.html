@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Portfolio</title>
+    <title>Alyssa Sklar - Projects</title>
 </head>
-<body id="about">
+<body id="projects">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="logo-container">
@@ -15,16 +15,48 @@
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
+        <section class="project-details">
+            <h1>Environmental Violence Prevention: Case Study of Youngstown, Ohio</h1>
+            <p>University of Michigan, URP 610: Intermediate Spatial Analysis, Winter 2021 </p>
+            <ul>
+                    <li>Deployed remote sensing techniques to predict levels of lawn maintenance to determine the validity of
+                        quantifying “greenness”.</li>
+                    <li>Explored spatial predictors of violence by investigating the association between community-engaged
+                        activities such as mowing or gardening, and reductions in violent crime density over time among residentially
+                        zoned vacant lots using regression technique in R.</li>
+                    <li>Examined whether specific properties of parcels were statistically association with the density of violent
+                        crimes.</li>
+                    <li>Created a comprehensive report and three-part poster to synthesize findings.</li>
+                </ul>
+        </section>
 
+        <section class="slide-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="media/env_violence_page1.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="media/env_violence_page2.jpg" alt="Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="media/env_violence_page3.jpg" alt="Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="clark.html" class="prev-project">Previous Project</a>
         Created by Alyssa Sklar, 2024. All rights reserved.
+        <a href="pictorial-symbology.html" class="next-project">Next Project</a>
     </footer>
 </body>
+<script src="js/slides.js"></script>
 </html>

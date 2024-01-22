@@ -41,11 +41,13 @@ nav a:hover {
 }
 
 body#about nav li:nth-child(1) a,
-body#portfolio nav li:nth-child(2) a,
+body#projects nav li:nth-child(2) a,
 body#cv nav li:nth-child(3) a {
     font-weight: bold;
     border-bottom: 2px solid #FF8552;
 }
+
+
 
 .skip-link {
     position: absolute;
@@ -62,6 +64,27 @@ footer {
     font-size: smaller;
 }
 
+.prev-project,
+.next-project {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #5D5958;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 100px 0 100px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.prev-project:hover,
+.next-project:hover {
+    background-color: #485444;
+    color: #FF8552;
+}
+
+
 .logo-container {
     text-align: center;
 }
@@ -76,7 +99,8 @@ footer {
     padding: 10px;
 }
 
-/* Portfolio */
+
+/* Projects */
 
 .main-image {
     position: relative;
@@ -134,6 +158,68 @@ footer {
 .thumbnail:hover, .thumbnail.active {
     border: 2px solid #FF8552;
 }
+
+
+/* CSS for the slideshow */
+.project-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-details h1 {
+    text-align: center;
+    color:#485444;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation arrows style */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: #485444;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 
 /* Media query for phone screens */
 @media only screen and (max-width: 600px) {

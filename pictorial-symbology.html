@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Portfolio</title>
+    <title>Alyssa Sklar - Projects</title>
 </head>
-<body id="portfolio">
+<body id="projects">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="logo-container">
@@ -15,28 +15,47 @@
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="pictorial-symbology.html">Pictorial Maps</a>
-                        <a href="metadata.html">Metadata</a>
-                        <a href="simons-town.html">Heritage Museum</a>
-                        <a href="ciglr-eco.html">GIS Curriculum</a>
-                        <a href="clark.html">Graphic Design</a>
-                        <a href="uhvi.html">Urban Heat</a>
-                        <a href="env-violence.html">Environmental Violence</a>
-                    </div>
-                </li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
-        <!-- Add your main content here -->
+        <section class="project-details">
+            <h1>Beyond Symbology: Identifying Subtextual Themes in Pictorial Maps</h1>
+            <p></p>
+                <ul>
+                    <li>Independently initiated and conducted a comprehensive analysis of pictorial maps depicting the United
+                        States from the 1920-1960s. Applied Cultural and Human Geography and Political Ecology theories to
+                        reveal subtextual narratives involving cultural caricaturization, capitalism and consumerism, American
+                        nationalism, enclosure and dispossession of land and exploitation of resources, and segregation in the
+                        depiction of labor and leisure activities.</li>
+                    <li>Explored and analyzed pictorial maps, delving into their symbology and connections to political, economic,
+                        cultural, and social dynamics.</li>
+                    <li>Presented at the Annual Meeting of the East Lakes Division of the American Association of Geographers
+                        (November 2023).</li>
+                </ul>
+        </section>
+
+        <section class="slide-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="media/" alt="Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="media/" alt="Image 2">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="env-violence.html" class="prev-project">Previous Project</a>
         Created by Alyssa Sklar, 2024. All rights reserved.
+        <a href="metadata.html" class="next-project">Next Project</a>
     </footer>
 </body>
-<script src="js/gallery.js"></script>
+<script src="js/slides.js"></script>
 </html>

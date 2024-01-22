@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Portfolio</title>
+    <title>Alyssa Sklar - Projects</title>
 </head>
-<body id="about">
+<body id="projects">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="logo-container">
@@ -15,16 +15,45 @@
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
+        <section class="project-details">
+            <h1>Simon’s Town Heritage Museum: Designing a Template for Digital Family Histories</h1>
+            <p>University of Michigan, SI 547: Engaging with Communities, Fall 2023</p>
+                <ul>
+                    <li>Collaborated with team members and client to initiate and establish an online archive/exhibit dedicated to
+                        illuminating the history and experiences of forcibly removed families in Simon’s Town, South Africa.</li>
+                    <li>Contributed to the creation of a comprehensive template and guide for documenting familial histories.</li>
+                    <li>Identified and implemented metadata standards, ensuring adherence to best practices in information
+                        organization and retrieval.</li>
+                    <li>Executed the ingestion of materials into the online exhibit website, ensuring seamless integration of content
+                        to provide a coherent and impactful narrative.</li>
+                </ul>
+        </section>
 
+        <section class="slide-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="media/" alt="Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="media/" alt="Image 2">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="metadata.html" class="prev-project">Previous Project</a>
         Created by Alyssa Sklar, 2024. All rights reserved.
+        <a href="ciglr-eco.html" class="next-project">Next Project</a>
     </footer>
 </body>
+<script src="js/slides.js"></script>
 </html>

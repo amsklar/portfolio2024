@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Portfolio</title>
+    <title>Alyssa Sklar - Projects</title>
 </head>
-<body id="about">
+<body id="projects">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="logo-container">
@@ -15,16 +15,46 @@
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
+        <section class="project-details">
+            <h1>Urban Heat Vulnerability Index: Case Study of Houston, Texas</h1>
+            <p>University of Michigan, URP 521: Intermediate GIS, Winter 2023</p>
+            <ul>
+                    <li>Designed a workflow tool in ArcGIS, utilizing ArcPy scripting, to construct a heat vulnerability index. This
+                        index incorporated key factors such as land surface temperature, air temperature, impervious surface, and
+                        vegetation. Further, the tool allowed parametrization by demographic variables (age and/or income) to map
+                        census tracts in Houston, Texas, identifying areas with the highest heat vulnerability.</li>
+                    <li>Analyzed and interpreted results, enabling the prioritization of areas and communities requiring urgent
+                        mitigation strategies.</li>
+                    <li>Utilized the findings to inform urban planning and policy initiatives aimed at addressing high-heat
+                        vulnerability.</li>
+                </ul>
+        </section>
 
+        <section class="slide-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="media/" alt="Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="media/" alt="Image 2">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="ciglr-eco.html" class="prev-project">Previous Project</a>
         Created by Alyssa Sklar, 2024. All rights reserved.
+        <a href="clark.html" class="next-project">Next Project</a>
     </footer>
 </body>
+<script src="js/slides.js"></script>
 </html>

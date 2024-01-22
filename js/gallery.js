@@ -9,10 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function changeImage(index) {
         const selectedThumbnail = thumbnails[index];
         mainImage.src = selectedThumbnail.src;
-
+    
+        // Remove active class from all thumbnails
+        thumbnails.forEach(t => t.classList.remove("active"));
+    
+        // Add active class to the selected thumbnail
+        selectedThumbnail.classList.add("active");
+    
         // Get the HTML page associated with the selected thumbnail
         const htmlPage = selectedThumbnail.getAttribute("data-html-page");
-
+    
         // Check if the HTML page is defined
         if (htmlPage) {
             // Redirect to the specified HTML page on double-click

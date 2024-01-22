@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Portfolio/title>
+    <title>Alyssa Sklar - Projects</title>
 </head>
-<body id="about">
+<body id="projects">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="logo-container">
@@ -15,16 +15,49 @@
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
+        <section class="project-details">
+            <h1>Metadata Application Profile</h1>
+            <p>Pictorial Map Metadata Guidelines: Requirements & Recommendations for Preparing Metadata for
+                Omeka S, University of Michigan, SI 676: Networked Services for Libraries, Archives, and Museums, Fall 2023</p>
+                <ul>
+                    <li>Formulated comprehensive guidelines for expressing item type and descriptive information related to
+                        pictorial maps through the creation of a Metadata Application Profile (MAP) to serve as a foundation
+                        framework for organizing and presenting metadata.</li>
+                    <li>Executed a meticulous metadata crosswalk into DublinCore, leveraging namespaces, standards, and
+                        controlled vocabularies to guarantee uniformity and interoperability.</li>
+                    <li>Applied Python and APIs to extract metadata, adhering to MAP guidelines, and facilitated seamless
+                        transformation.</li>
+                    <li>Ingested the transformed metadata to establish a curated thematic Omeka S site, providing a user-friendly
+                        platform for accessing and exploring pictorial maps.</li>
+                    <li>Utilized GitHub to create a repository for streamlined version control.</li>
+                </ul>
+        </section>
 
+        <section class="slide-gallery">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="media/github-MAP.png" alt="Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="media/omeka-site.png" alt="Image 2">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="pictorial-symbology.html" class="prev-project">Previous Project</a>
         Created by Alyssa Sklar, 2024. All rights reserved.
+        <a href="simons-town.html" class="next-project">Next Project</a>
     </footer>
 </body>
+<script src="js/slides.js"></script>
 </html>
