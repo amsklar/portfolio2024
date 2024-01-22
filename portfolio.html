@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Alyssa Sklar - Home</title>
+    <title>Alyssa Sklar - Portfolio</title>
 </head>
 <body id="portfolio">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-        <h1>Alyssa Sklar</h1>
+        <div class="logo-container">
+            <img src="media/name.png" alt="Alyssa Sklar Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
-
+        <div class="image-gallery">
+            <div class="main-image">
+                <img src="media/symbology.png" alt="Large Image 1">
+                <div class="arrow-container">
+                    <span class="arrow left-arrow"></span>
+                    <span class="arrow right-arrow"></span>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="media/symbology.png" data-title="Title 3" data-description="Description for Image 3" alt="Thumbnail 3">
+                <img class="thumbnail" src="media/simons-town-site.png" data-title="Title 2" data-description="Description for Image 2" alt="Thumbnail 2">
+                <img class="thumbnail" src="media/github-MAP.png" data-title="Title 3" data-description="Description for Image 3" alt="Thumbnail 3">
+                <img class="thumbnail" src="media/uhvi.png" data-title="Title 3" data-description="Description for Image 3" alt="Thumbnail 3">
+                <img class="thumbnail" src="media/ciglr-eco.png" data-title="Title 3" data-description="Description for Image 3" alt="Thumbnail 3">
+                <img class="thumbnail" src="media/env_violence_page1.jpg" data-title="Title 3" data-description="Description for Image 3" alt="Thumbnail 3">
+            </div>
+        </div>
     </main>
     <footer>
-        &copy; 2024 Created by Alyssa Sklar. All rights reserved.
+        Created by Alyssa Sklar, 2024. All rights reserved.
     </footer>
 </body>
+<script src="js/gallery.js"></script>
 </html>

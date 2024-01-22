@@ -1,0 +1,148 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+header, footer {
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    /* #485444 #5D5958 */
+    color: #5D5958;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #FF8552;
+}
+
+body#about nav li:nth-child(1) a,
+body#portfolio nav li:nth-child(2) a,
+body#cv nav li:nth-child(3) a {
+    font-weight: bold;
+    border-bottom: 2px solid #FF8552;
+}
+
+.skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    font-size: smaller;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%; /* Ensure the logo doesn't exceed its container */
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+/* Portfolio */
+
+.main-image {
+    position: relative;
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 800px;
+    height: auto;
+    object-fit: cover; /* Crop the image to cover the container */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.arrow-container {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    color: #5D5958;
+    margin: 0 70px;
+}
+
+.arrow:before {
+    content: '\2190';
+}
+
+.right-arrow:before {
+    content: '\2192';
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    border: 2px solid #FF8552;
+}
+
+/* Media query for phone screens */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+}
