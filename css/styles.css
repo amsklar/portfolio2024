@@ -123,8 +123,8 @@ footer {
 }
 
 .thumbnail {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     margin: 0 5px;
     cursor: pointer;
